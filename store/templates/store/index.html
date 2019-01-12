@@ -1,0 +1,17 @@
+{% extends 'store/layout.html' %}
+
+{% block content %}
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Welcome!</h1>
+						<p>This is a Django based application which stores and shows names and email addresses</p>
+					</header>
+					<a href="{% url 'list' %}" class="button big scrolly">List</a> 
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="{% url 'add' %}" class="button big scrolly">Add</a>
+				</div>
+			</section>
+
+{% endblock %}
